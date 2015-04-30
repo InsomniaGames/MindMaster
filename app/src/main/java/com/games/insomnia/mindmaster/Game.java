@@ -1,5 +1,6 @@
 package com.games.insomnia.mindmaster;
 
+import com.games.insomnia.mindmaster.objects.AnswerRow;
 import com.games.insomnia.mindmaster.objects.GameMode;
 
 /**
@@ -9,9 +10,11 @@ import com.games.insomnia.mindmaster.objects.GameMode;
 public class Game {
 
     private GameMode currentMode;
+    private AnswerRow pattern;
 
     public Game(GameMode mode){
         newGame(mode);
+        pattern = new AnswerRow();
     }
 
     private void newGame(GameMode mode){
@@ -20,5 +23,13 @@ public class Game {
 
     public GameMode getCurrentMode() {
         return currentMode;
+    }
+
+    public AnswerRow getPattern() {
+        return pattern;
+    }
+
+    public void setPattern(AnswerRow pattern) {
+        this.pattern = pattern;
     }
 }

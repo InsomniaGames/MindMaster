@@ -21,6 +21,7 @@ public class MainActivity extends ActionBarActivity {
         Ln.d(game.getCurrentMode());
         BoardSettings.getInstance().setMode(GameModesEnum.CLASSIC.getMode());
         Ln.d(game.getCurrentMode());
+        Ln.d(game.getPattern().toString());
     }
 
 

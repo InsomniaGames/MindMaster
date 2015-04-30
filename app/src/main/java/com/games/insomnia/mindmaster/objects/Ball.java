@@ -29,4 +29,8 @@ public class Ball extends BaseObject {
     public void setColor(int color) {
         this.color = color;
     }
+
+    public String toString(){
+        return "Ball: " + this.hashCode() + "Value: " + value + " color: " + color;
+    }
 }

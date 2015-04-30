@@ -27,7 +27,7 @@ public enum BallEnum {
 
     protected Ball ball;
 
-    public Ball getBall(int value) {
+    public static Ball getBall(int value) {
         return BallEnum.values()[value].getBall();
     }
 
