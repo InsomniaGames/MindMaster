@@ -6,12 +6,12 @@ import android.graphics.Color;
  * Created by askrobek on 30.04.15.
  * 14:48
  */
-public class AnswerBall extends BaseObject {
+public class CorrectBall extends BaseObject {
 
     private int value;
     private Color color;
 
-    public AnswerBall(int value, Color color) {
+    public CorrectBall(int value, Color color) {
         this.value = value;
         this.color = color;
     }

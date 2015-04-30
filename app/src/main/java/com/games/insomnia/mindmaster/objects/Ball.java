@@ -1,7 +1,5 @@
 package com.games.insomnia.mindmaster.objects;
 
-import android.graphics.Color;
-
 /**
  * Created by askrobek on 30.04.15.
  * 13:53
@@ -9,9 +7,9 @@ import android.graphics.Color;
 public class Ball extends BaseObject {
 
     private int value;
-    private Color color;
+    private int color;
 
-    public Ball(int value, Color color) {
+    public Ball(int value, int color) {
         this.value = value;
         this.color = color;
     }
@@ -24,11 +22,11 @@ public class Ball extends BaseObject {
         this.value = value;
     }
 
-    public Color getColor() {
+    public int getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(int color) {
         this.color = color;
     }
 }

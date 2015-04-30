@@ -11,7 +11,7 @@ public class BoardRow extends BaseObject {
     private int rowSize;
     private ArrayList<Ball> ballInRow;
     private boolean currentRow;
-    private ArrayList<AnswerBall> answerBalls;
+    private ArrayList<CorrectBall> correctBalls;
 
     public BoardRow(int rowSize) {
         this.rowSize = rowSize;
@@ -41,12 +41,12 @@ public class BoardRow extends BaseObject {
         this.currentRow = currentRow;
     }
 
-    public ArrayList<AnswerBall> getAnswerBalls() {
-        return answerBalls;
+    public ArrayList<CorrectBall> getCorrectBalls() {
+        return correctBalls;
     }
 
-    public void setAnswerBalls(ArrayList<AnswerBall> answerBalls) {
-        this.answerBalls = answerBalls;
+    public void setCorrectBalls(ArrayList<CorrectBall> correctBalls) {
+        this.correctBalls = correctBalls;
     }
 
 
