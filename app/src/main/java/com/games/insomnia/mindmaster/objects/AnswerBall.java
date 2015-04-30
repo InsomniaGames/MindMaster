@@ -4,14 +4,14 @@ import android.graphics.Color;
 
 /**
  * Created by askrobek on 30.04.15.
- * 13:53
+ * 14:48
  */
-public class Ball extends BaseObject {
+public class AnswerBall extends BaseObject {
 
     private int value;
     private Color color;
 
-    public Ball(int value, Color color) {
+    public AnswerBall(int value, Color color) {
         this.value = value;
         this.color = color;
     }
