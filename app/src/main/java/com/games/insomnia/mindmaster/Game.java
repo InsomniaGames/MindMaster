@@ -2,6 +2,7 @@ package com.games.insomnia.mindmaster;
 
 import com.games.insomnia.mindmaster.objects.AnswerRow;
 import com.games.insomnia.mindmaster.objects.GameMode;
+import com.games.insomnia.mindmaster.utils.BoardSettings;
 
 /**
  * Created by askrobek on 30.04.15.
@@ -18,7 +19,8 @@ public class Game {
     }
 
     private void newGame(GameMode mode){
-        this.currentMode = mode;
+        BoardSettings.getInstance().setMode(mode);
+        this.currentMode = BoardSettings.getInstance().getMode();
     }
 
     public GameMode getCurrentMode() {

@@ -5,7 +5,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.games.insomnia.mindmaster.utils.BoardSettings;
 import com.games.insomnia.mindmaster.utils.GameModesEnum;
 
 import roboguice.util.Ln;
@@ -19,9 +18,6 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         Game game = new Game(GameModesEnum.CLASSIC.getMode());
         Ln.d(game.getCurrentMode());
-        BoardSettings.getInstance().setMode(GameModesEnum.CLASSIC.getMode());
-        Ln.d(game.getCurrentMode());
-        Ln.d(game.getPattern().toString());
     }
 
 

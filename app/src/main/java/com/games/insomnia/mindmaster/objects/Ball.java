@@ -31,6 +31,6 @@ public class Ball extends BaseObject {
     }
 
     public String toString(){
-        return "Ball: " + this.hashCode() + "Value: " + value + " color: " + color;
+        return "Ball: " + this.hashCode() + "\nValue: " + value + " color: " + color;
     }
 }

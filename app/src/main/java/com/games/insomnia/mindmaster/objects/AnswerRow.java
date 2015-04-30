@@ -35,9 +35,9 @@ public class AnswerRow {
     private Ball generateBall(){
         Random rand = new Random();
         if(haveDuplicates){
-            return combinationWithoutRepetition(rand);
-        }else {
             return combinationWithRepetition(rand);
+        }else {
+            return combinationWithoutRepetition(rand);
         }
     }
 
@@ -46,13 +46,13 @@ public class AnswerRow {
     }
 
     private Ball combinationWithRepetition(Random rand){
-        return BallEnum.getBall(rand.nextInt(colorCount + 1));
+        return BallEnum.getBall(rand.nextInt(colorCount));
     }
 
     public String toString(){
         StringBuilder builder = new StringBuilder();
         for(Ball ball : pattern){
-            builder.append(ball.toString()).append(" ");
+            builder.append(ball.toString()).append("\n");
         }
         return builder.toString();
     }
